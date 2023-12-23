@@ -1,0 +1,137 @@
+returnbody {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.white-header h1 {
+  margin: 0;
+  color: #333; /* Color de texto */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.background {
+  background-image: url('cangas_fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px); /* Aumenta el difuminado */
+  opacity: 0.5; /* Reduce la opacidad */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.message {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(128, 128, 128, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  animation: fadeInOut 3s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333; /* Color de enlace */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-button {
+  background-color: white; /* Fondo blanco */
+  border: 2px solid white; /* Borde sólido blanco */
+  color: black; /* Texto negro */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.custom-button:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Blanco más oscuro */
+  color: black;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+}
+
+
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.white-header {
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el contenido principal */
+.App-main {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  padding: 20px;
+}
+
+/* Estilos CSS para alinear la imagen y el texto horizontalmente */
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para la imagen */
+.App-logo {
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos adicionales para el header y otros elementos de la página */
+.white-header {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
